@@ -27,11 +27,11 @@ export default class CartFormaWidget {
   static get selector() {
     return '.cart-form-widget';
   }
-    
+
   static get inputSelector() {
     return '.input';
   }
-    
+
   static get submitSelector() {
     return '.submit';
   }

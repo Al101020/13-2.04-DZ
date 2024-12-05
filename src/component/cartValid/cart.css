@@ -1,31 +1,45 @@
-.kartaPic {
-    width: 100px;
+.cartPic {
+    width: 70px;
     height: 20px;
     margin: 0 5px 10px;
-    /* background: rgb(249, 249, 251); */
-    /* border-radius: 30%; */
-    
+    background: rgb(175, 215, 172);
+    text-align: center;
     border: 1px solid black;
-  
-    /* background-image: url(./pic/visa.png); */
-    /* background-image: url(visa.png); */
   }
   
 .containerCart {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
     justify-content: flex-start;
     background: rgb(116, 116, 222);
     margin: 3px;
-      
-    width: 400px;
+    width: 410px;
     border: 1px solid black;
-
     padding: 3px;
 }
 
-/* .visa {
-    background-image: url(./pic/visa.png);
-} */
-  
+
+/* Карты */
+.mir {
+    font-size: 15px;
+}
+
+.americanExpress {
+    font-size: 9px;
+}
+
+.visa {
+    font-size: 15px;
+}
+
+.masterCard {
+    padding-top: auto;
+    padding-bottom: auto;
+    font-size: 12px;
+}
+
+.discover {
+    padding-top: auto;
+    padding-bottom: auto;
+    font-size: 14px;
+}

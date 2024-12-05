@@ -1,3 +1,3 @@
 export default function isValidCart(value) {
-  return value.length >= 10 && value.length <= 16;
+  return value.length >= 15 && value.length <= 16;
 }

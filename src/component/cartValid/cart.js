@@ -1,10 +1,10 @@
+// console.log('cart.js');
+
 import './cart.css';
 import CartFormaWidget from './widgetCart';
+// console.log(CartFormaWidget.submitSelector);
 
-// import cartFormaWidget from './widgetCart';
-
-console.log('cart.js');
-const containerCart = document.querySelector('.container_Cart');
+const containerCart = document.querySelector('body');
 const formCart = new CartFormaWidget(containerCart);
 
 formCart.bindToDOM();

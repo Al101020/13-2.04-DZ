@@ -1,24 +1,7 @@
 body {
-    background-color: #89dcdf;
+  background-color: #e3f1f2;
 }
 
-.KartaPic {
-    width: 100px;
-    height: 20px;
-    margin: 0 5px 10px;
-    background: blue;
-    /* border-radius: 30%; */
+
+
   
-    border: 1px solid black;
-
-    
-  }
-
-  .containerKarta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-    width: 400px;
-    border: 1px solid black;
-  }

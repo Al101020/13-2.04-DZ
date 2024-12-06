@@ -1,6 +1,6 @@
 import isValidCart from './validators';
 
-export default class CartFormaWidget {
+export default class CartFormWidget {
   constructor(parentEl) {
     this.parentEl = parentEl;
 
@@ -17,7 +17,7 @@ export default class CartFormaWidget {
         <div class="cartPic discover">Discover</div>
         <form class="cart-form-widget">
           <label for="cart-input">№ карты =></label>
-          <input type="text" data-id="cart-input">
+          <input type="text" data-id="cart-input" class="input">
           <button class="submit">Click to Validate</button>
         </form>
       </div>
@@ -37,11 +37,14 @@ export default class CartFormaWidget {
   }
 
   bindToDOM() {
-    this.parentEl.innerHTML = CartFormaWidget.markup;
+    this.parentEl.innerHTML = CartFormWidget.markup;
 
-    this.element = this.parentEl.querySelector(CartFormaWidget.selector);
-    this.submit = this.element.querySelector(CartFormaWidget.submitSelector);
-    this.input = this.element.querySelector(CartFormaWidget.inputSelector);
+    this.element = this.parentEl.querySelector(CartFormWidget.selector);
+    // console.log(this.element);
+    this.submit = this.element.querySelector(CartFormWidget.submitSelector);
+    // console.log(this.submit);
+    this.input = this.element.querySelector(CartFormWidget.inputSelector);
+    console.log(this.input);
 
     this.element.addEventListener('submit', this.onSubmit);
   }
@@ -49,18 +52,15 @@ export default class CartFormaWidget {
   onSubmit(e) {
     e.preventDefault();
 
-    console.log(this.input);
-
     const { value } = this.input;
 
     if (isValidCart(value)) {
+                    console.log(value);
       this.input.classList.add('valid');
       this.input.classList.remove('invalid');
     } else {
       this.input.classList.add('invalid');
       this.input.classList.remove('valid');
     }
-
-    console.log('submit');
   }
 }

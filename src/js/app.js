@@ -1,1 +1,1 @@
-import '../component/cartValid/cart';
+import '../component/cardValid/card';

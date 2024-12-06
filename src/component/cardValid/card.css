@@ -1,4 +1,4 @@
-.cartPic {
+.cardPic {
     width: 70px;
     height: 20px;
     margin: 0 5px 10px;
@@ -7,7 +7,7 @@
     border: 1px solid black;
   }
   
-.containerCart {
+.containerCard {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -41,5 +41,13 @@
 .discover {
     padding-top: auto;
     padding-bottom: auto;
-    font-size: 14px;
+    font-size: 9px;
+}
+
+.valid {
+    border: 5px solid green;
+}
+
+.invalid {
+    border: 5px solid red;
 }

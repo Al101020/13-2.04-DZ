@@ -1,5 +1,7 @@
 export default function isValidCart(value) {
-  return value.length >= 15 && value.length <= 16;
+  if(value.length = 16) {
+    number
+  } else { return false; };
 }
 
 

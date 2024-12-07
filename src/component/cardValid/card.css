@@ -1,6 +1,6 @@
 .cardPic {
     width: 70px;
-    height: 20px;
+    height: 25px;
     margin: 0 5px 10px;
     background: rgb(175, 215, 172);
     text-align: center;
@@ -21,29 +21,32 @@
 
 /* Карты */
 .mir {
-    font-size: 15px;
+    background-image: url("./pic/mir.png");
+    background-size: 100% 100%;
 }
 
 .americanExpress {
-    font-size: 9px;
+    background-image: url("./pic/Maestro.png");
+    background-size: 100% 100%;
 }
 
 .visa {
-    font-size: 15px;
+    background-image: url("./pic/visa.png");
+    background-size: 100% 100%;
 }
 
 .masterCard {
-    padding-top: auto;
-    padding-bottom: auto;
-    font-size: 12px;
+    background-image: url("./pic/MasterCard.png");
+    background-size: 100% 100%;
 }
 
 .discover {
-    padding-top: auto;
-    padding-bottom: auto;
-    font-size: 9px;
+    background-image: url("./pic/Discover.png");
+    background-size: 100% 100%;
 }
 
+
+/* valid/invalid */
 .valid {
     border: 5px solid green;
 }

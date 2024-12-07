@@ -11,11 +11,11 @@ export default class CardFormWidget {
   static get markup() {
     return `
       <div class="containerCard">
-        <div class="cardPic mir">МИР</div>
-        <div class="cardPic americanExpress">American Express<br>Diner's Club  ...</div>
-        <div class="cardPic visa">Visa</div>
-        <div class="cardPic masterCard">MasterCard</div>
-        <div class="cardPic discover">Discover<br>China Union Pay</div>
+        <div class="cardPic mir"></div>
+        <div class="cardPic americanExpress"></div>
+        <div class="cardPic visa"></div>
+        <div class="cardPic masterCard"></div>
+        <div class="cardPic discover"></div>
         <form class="card-form-widget">
           <label for="card-input">№ карты =></label>
           <input type="text" data-id="card-input" class="input">
@@ -41,11 +41,8 @@ export default class CardFormWidget {
     this.parentEl.innerHTML = CardFormWidget.markup;
 
     this.element = this.parentEl.querySelector(CardFormWidget.selector);
-    // console.log(this.element);
     this.submit = this.element.querySelector(CardFormWidget.submitSelector);
-    // console.log(this.submit);
     this.input = this.element.querySelector(CardFormWidget.inputSelector);
-    console.log(this.input);
 
     this.element.addEventListener('submit', this.onSubmit);
   }
@@ -54,7 +51,6 @@ export default class CardFormWidget {
     e.preventDefault();
 
     const { value } = this.input;
-    console.log(algoritmLuna(value));
 
     if (isValidCard(value) && algoritmLuna(value)) {
       this.input.classList.add('valid');
